@@ -1,258 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INNOSON ELECTRONICS PLAZA</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff8e1;
-    color: #333;
-  }
-
-  header img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .intro {
-    text-align: center;
-    padding: 20px;
-    background: #ffd700;
-    color: #000;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  .gallery img {
-    width: calc(50% - 10px);
-    height: auto;
-    border-radius: 5px;
-  }
-
-  /* Sliding animation for first two images */
-  .slide-left-right {
-    animation: slideLR 3s infinite alternate;
-  }
-
-  @keyframes slideLR {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(15px); }
-    100% { transform: translateX(0); }
-  }
-
-  .form-section {
-    background: #fff8e1;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    border: 2px solid #ffd700;
-  }
-
-  .form-section h2 {
-    text-align: center;
-    color: #b8860b;
-  }
-
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-
-  input, textarea, button {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .products label {
-    width: calc(50% - 10px);
-    background: #fff5d1;
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ffd700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-
-  .products input {
-    margin-right: 5px;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #b8860b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .buttons a.facebook {
-    background: #3b5998;
-  }
-
-  iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-
-  .address {
-    background: #fff8e1;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 8px;
-    border: 2px solid #ffd700;
-    text-align: center;
-    font-weight: bold;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INNOSON ELECTRONICS PLAZA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #b68f40; /* gold theme */
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #d4af37; /* gold accent */
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #a0782e;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: calc(50% - 10px);
+      height: auto;
+      object-fit: cover;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-item {
+      width: calc(50% - 20px);
+      display: flex;
+      align-items: center;
+      border: 1px solid #d4af37;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fff9e6;
+    }
+    .product-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .product-name {
+      flex: 1;
+    }
+    .product-spec, .product-delivery {
+      width: 120px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    footer {
+      background-color: #b68f40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media(max-width: 600px){
+      .gallery img, .product-item {
+        width: 100%;
+      }
+      .product-spec, .product-delivery {
+        width: 100px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/9558d6a63c2211be846921bec0007115ad92c8d0/.github/workflows/1773740154904.png" alt="INNOSON Electronics Plaza">
+  <h1>INNOSON ELECTRONICS PLAZA</h1>
+  <p>Shop the latest electronics with home delivery available</p>
 </header>
 
-<div class="intro">
-  INNOSON ELECTRONICS PLAZA <br>
-  Authorized Dealers in Samsung, LG, Panasonic, Polyester
-</div>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Products</a>
+  <a href="#">Contact</a>
+  <a href="#">About Us</a>
+</nav>
 
 <section class="gallery">
-  <!-- First two images sliding -->
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(1).webp" class="slide-left-right" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(10).webp" class="slide-left-right" alt="">
-  <!-- Remaining images static -->
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(11).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(12).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(13).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(14).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(2).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(3).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(4).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(5).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(6).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(7).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(8).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(9).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(42).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(43).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(44).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(45).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(46).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(47).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(48).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(51).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(53).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(2).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(3).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(5).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(6).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(7).webp" alt="">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(1).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(2).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(3).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(4).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(5).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(6).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(7).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(8).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(9).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(10).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(11).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(12).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(13).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(14).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(42).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(43).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(44).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(45).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(46).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(47).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(48).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(51).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(53).jpeg" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(2).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(3).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(5).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(6).webp" alt="Product">
+  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(7).webp" alt="Product">
 </section>
 
-<!-- FORM, PRODUCTS, ADDRESS, MAP (unchanged) -->
-<section class="form-section">
-  <h2>Place Your Order</h2>
-  <form id="orderForm">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
-    </div>
-    <div class="form-group">
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" required>
-    </div>
-    <div class="form-group">
-      <label>Select Products:</label>
-      <div class="products">
-        <label><input type="checkbox" value="Fridge"> Fridge</label>
-        <label><input type="checkbox" value="Deep Freezer"> Deep Freezer</label>
-        <label><input type="checkbox" value="Glass Cooker"> Glass Cooker</label>
-        <label><input type="checkbox" value="AC Standing Unit"> AC Standing Unit</label>
-        <label><input type="checkbox" value="AC Split Unit"> AC Split Unit</label>
-        <label><input type="checkbox" value="Generator"> Generator</label>
-        <label><input type="checkbox" value="Washing Machine"> Washing Machine</label>
-        <label><input type="checkbox" value="Electric Oven"> Electric Oven</label>
-        <label><input type="checkbox" value="Blender"> Blender</label>
-        <label><input type="checkbox" value="Home Theater"> Home Theater</label>
-        <label><input type="checkbox" value="Plasma TV"> Plasma TV</label>
-        <label><input type="checkbox" value="Standing Fan"> Standing Fan</label>
-        <label><input type="checkbox" value="Solar Fan"> Solar Fan</label>
-        <label><input type="checkbox" value="Yam Pounder"> Yam Pounder</label>
-      </div>
-    </div>
-    <div class="buttons">
-      <a href="https://wa.me/2348038164370" target="_blank">WhatsApp</a>
-      <a href="https://www.facebook.com/share/1AhBMfAvVh/" target="_blank" class="facebook">Facebook</a>
-    </div>
-    <button type="button" onclick="submitOrder()" style="margin-top:15px;background:#b8860b;color:white;">Submit Order</button>
-  </form>
+<section class="products">
+  <div class="product-item">
+    <input type="checkbox" id="fridge">
+    <div class="product-name"><label for="fridge">Fridge</label></div>
+    <div class="product-spec">200L</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="deep-freezer">
+    <div class="product-name"><label for="deep-freezer">Deep Freezer</label></div>
+    <div class="product-spec">150L</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="glass-cooker">
+    <div class="product-name"><label for="glass-cooker">Glass Cooker</label></div>
+    <div class="product-spec">2 Plates</div>
+    <div class="product-delivery">No</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="ac-standing">
+    <div class="product-name"><label for="ac-standing">AC Standing Unit</label></div>
+    <div class="product-spec">1.5HP</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="ac-split">
+    <div class="product-name"><label for="ac-split">AC Split Unit</label></div>
+    <div class="product-spec">1HP</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="generator">
+    <div class="product-name"><label for="generator">Generator</label></div>
+    <div class="product-spec">3KVA</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="washing-machine">
+    <div class="product-name"><label for="washing-machine">Washing Machine</label></div>
+    <div class="product-spec">7kg</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="electric-oven">
+    <div class="product-name"><label for="electric-oven">Electric Oven</label></div>
+    <div class="product-spec">30L</div>
+    <div class="product-delivery">No</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="blender">
+    <div class="product-name"><label for="blender">Blender</label></div>
+    <div class="product-spec">500W</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="home-theater">
+    <div class="product-name"><label for="home-theater">Home Theater</label></div>
+    <div class="product-spec">5.1 Channel</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="plasma-tv">
+    <div class="product-name"><label for="plasma-tv">Plasma TV</label></div>
+    <div class="product-spec">42"</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="standing-fan">
+    <div class="product-name"><label for="standing-fan">Standing Fan</label></div>
+    <div class="product-spec">16"</div>
+    <div class="product-delivery">Yes</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="solar-fan">
+    <div class="product-name"><label for="solar-fan">Solar Fan</label></div>
+    <div class="product-spec">12V</div>
+    <div class="product-delivery">No</div>
+  </div>
+  <div class="product-item">
+    <input type="checkbox" id="yam-pounder">
+    <div class="product-name"><label for="yam-pounder">Yam Pounder</label></div>
+    <div class="product-spec">2.5kg</div>
+    <div class="product-delivery">Yes</div>
+  </div>
 </section>
 
-<section class="address">
-  Head Office: 62 Mission Road opposite Holy Cross Cathedral, Benin City, Edo State <br>
-  Branch: 53 Mission Road opposite Glo Office, Benin City, Edo State
-</section>
-
-<section class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.025456632084!2d5.624343214774131!3d6.330905024729518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf7e7f4e4e12d%3A0x99b1f65a68d6c9f!2s62%20Mission%20Rd%2C%20Benin%20City%2C%20Edo%20State!5e0!3m2!1sen!2sng!4v1678900000000!5m2!1sen!2sng" allowfullscreen></iframe>
-</section>
-
-<script>
-function submitOrder() {
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const products = Array.from(document.querySelectorAll('.products input:checked')).map(i => i.value);
-  if(!name || !phone || products.length === 0) {
-    alert("Please fill all fields and select at least one product.");
-    return;
-  }
-  let message = `Hello, my name is ${name}. I would like to order: ${products.join(', ')}. My phone number is ${phone}.`;
-  window.open(`https://wa.me/2348038164370?text=${encodeURIComponent(message)}`, '_blank');
-}
-</script>
+<footer>
+  <p>INNOSON ELECTRONICS PLAZA | Address: Ezenei Junction, Inside Ogbo Osisi Market, Asaba, Delta State</p>
+</footer>
 
 </body>
 </html>
