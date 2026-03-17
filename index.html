@@ -34,9 +34,11 @@
       padding: 20px;
       margin: 20px;
       border-radius: 8px;
+      border: 2px solid #d4af37; /* Gold border */
     }
     .form-section h2 {
       text-align: center;
+      color: #d4af37; /* Gold heading */
     }
     .form-group {
       margin-bottom: 15px;
@@ -44,6 +46,7 @@
     label {
       display: block;
       margin-bottom: 5px;
+      color: #333;
     }
     input, select, textarea, button {
       width: 100%;
@@ -59,9 +62,10 @@
     }
     .products label {
       width: calc(50% - 10px);
-      background: #f1f1f1;
+      background: #fff7e6; /* light gold background */
       padding: 5px;
       border-radius: 4px;
+      border: 1px solid #d4af37;
       cursor: pointer;
     }
     .buttons {
@@ -73,14 +77,15 @@
     .buttons a {
       display: inline-block;
       padding: 10px 20px;
-      background: #25d366;
+      background: #d4af37; /* Gold button */
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      text-align: center;
     }
     .buttons a.facebook {
-      background: #3b5998;
+      background: #b8860b; /* darker gold for Facebook button */
     }
     iframe {
       width: 100%;
@@ -98,6 +103,7 @@
 </header>
 
 <section class="gallery">
+  <!-- All your images 2 per row -->
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(1).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(10).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(11).webp" alt="">
@@ -160,7 +166,7 @@
         <label><input type="checkbox" value="Yam Pounder"> Yam Pounder</label>
       </div>
     </div>
-    <button type="button" onclick="submitOrder()">Submit Order</button>
+    <button type="button" onclick="submitOrder()" style="background:#d4af37;color:white;">Submit Order</button>
   </form>
 
   <div class="buttons">
