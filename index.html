@@ -13,6 +13,7 @@ background:#000;
 color:#fff;
 }
 
+/* TOP IMAGE */
 .hero{
 width:100%;
 height:260px;
@@ -29,6 +30,7 @@ text-align:center;
 padding:20px;
 }
 
+/* GALLERY FIXED (SHOW FULL IMAGES) */
 .gallery{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -38,12 +40,14 @@ padding:10px;
 
 .gallery img{
 width:100%;
-height:180px;
-object-fit:cover;
+height:auto;
+object-fit:contain;
+background:#000;
 border:2px solid gold;
 border-radius:6px;
 }
 
+/* FORM */
 .form-box{
 max-width:900px;
 margin:auto;
@@ -79,12 +83,14 @@ font-weight:bold;
 cursor:pointer;
 }
 
+/* MAP */
 .map{
 width:100%;
 height:300px;
 border:0;
 }
 
+/* SOCIAL */
 .social-btn{
 display:block;
 width:90%;
@@ -124,13 +130,45 @@ Benin City, Edo State.</p>
 Visit our Facebook Page
 </a>
 
-<!-- GALLERY -->
+<!-- ALL IMAGES (FULL VIEW) -->
 <div class="gallery">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(1).webp">
 <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(10).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(11).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(12).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(13).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(14).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(2).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(3).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(4).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(5).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(6).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(7).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(8).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(9).webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.webp">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(42).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(43).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(44).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(45).jpeg">
+
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(46).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(47).jpeg">
+
 </div>
 
-<!-- FORM -->
+<!-- ORDER FORM -->
 <div class="form-box">
 
 <h2>Place Your Orders</h2>
@@ -139,19 +177,11 @@ Visit our Facebook Page
 
 <div class="products">
 <label><input type="checkbox" value="Fridge"> Fridge</label>
-<label><input type="checkbox" value="Deep Freezer"> Deep Freezer</label>
-<label><input type="checkbox" value="Gas Cooker"> Gas Cooker</label>
-<label><input type="checkbox" value="AC Standing Unit"> AC Standing Unit</label>
-<label><input type="checkbox" value="AC Split Unit"> AC Split Unit</label>
-<label><input type="checkbox" value="Generator"> Generator</label>
+<label><input type="checkbox" value="AC"> Air Conditioner</label>
+<label><input type="checkbox" value="TV"> Television</label>
 <label><input type="checkbox" value="Washing Machine"> Washing Machine</label>
-<label><input type="checkbox" value="Electric Oven"> Electric Oven</label>
-<label><input type="checkbox" value="Blender"> Blender</label>
-<label><input type="checkbox" value="Home Theater"> Home Theater</label>
-<label><input type="checkbox" value="Plasma TV"> Plasma TV</label>
-<label><input type="checkbox" value="Standing Fan"> Standing Fan</label>
-<label><input type="checkbox" value="Solar Fan"> Solar Fan</label>
-<label><input type="checkbox" value="Yam Pounder"> Yam Pounder</label>
+<label><input type="checkbox" value="Generator"> Generator</label>
+<label><input type="checkbox" value="Fan"> Fan</label>
 </div>
 
 <input type="text" id="name" placeholder="Your Name" required>
