@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INNOSON ELECTRONICS PLAZA</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#000;
+color:#fff;
+}
+
+.hero{
+width:100%;
+height:260px;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:bold;
+color:gold;
+text-align:center;
+padding:10px;
+}
+
+h2{
+text-align:center;
+color:gold;
+}
+
+.info{
+text-align:center;
+padding:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+padding:10px;
+}
+
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border:2px solid gold;
+border-radius:6px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-bottom:15px;
+}
+
+.products label{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.form-box{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:12px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:gold;
+border:none;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+.map{
+width:100%;
+height:300px;
+border:0;
+}
+
+.social-btn{
+display:block;
+width:90%;
+margin:10px auto;
+padding:12px;
+background:#1877f2;
+color:#fff;
+text-align:center;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+INNOSON ELECTRONICS PLAZA
+</div>
+
+<div class="info">
+
+<h2>Authorized Dealers</h2>
+<p>Samsung, LG, Panasonic, Polystar</p>
+
+<p><b>Head Office:</b><br>
+62 Mission Road, Opposite Holy Cross Cathedral,<br>
+Benin City, Edo State, Nigeria.</p>
+
+<p><b>Branch:</b><br>
+53 Mission Road, Opposite Glo Office,<br>
+Benin City, Edo State.</p>
+
+<p><b>WhatsApp:</b> 08038164370</p>
+
+</div>
+
+<!-- FACEBOOK BUTTON -->
+<a class="social-btn" href="https://www.facebook.com/share/1AhBMfAvVh/" target="_blank">
+Visit our Facebook Page
+</a>
+
+<!-- IMAGE GALLERY (you can still add your images here) -->
+<div class="gallery">
+
+<img loading="lazy" src="https://via.placeholder.com/400">
+<img loading="lazy" src="https://via.placeholder.com/400">
+
+<img loading="lazy" src="https://via.placeholder.com/400">
+<img loading="lazy" src="https://via.placeholder.com/400">
+
+</div>
+
+<!-- MAP -->
+<iframe class="map"
+src="https://maps.google.com/maps?q=62%20Mission%20Road%20Benin%20City%20Nigeria&output=embed">
+</iframe>
+
+<!-- FORM -->
+<div class="form-box">
+
+<h2>Place Your Orders</h2>
+
+<form onsubmit="sendWhatsApp();return false;">
+
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<input id="location" placeholder="Your Location" required>
+
+<h3 style="color:gold">Choose Product</h3>
+
+<div class="products">
+
+<label><input type="checkbox" value="Fridge"> Fridge</label>
+<label><input type="checkbox" value="Deep Freezer"> Deep Freezer</label>
+
+<label><input type="checkbox" value="Glass Cooker"> Glass Cooker</label>
+<label><input type="checkbox" value="AC Standing Unit"> AC Standing Unit</label>
+
+<label><input type="checkbox" value="AC Split Unit"> AC Split Unit</label>
+<label><input type="checkbox" value="Generator"> Generator</label>
+
+<label><input type="checkbox" value="Washing Machine"> Washing Machine</label>
+<label><input type="checkbox" value="Electric Oven"> Electric Oven</label>
+
+<label><input type="checkbox" value="Blender"> Blender</label>
+<label><input type="checkbox" value="Home Theater"> Home Theater</label>
+
+<label><input type="checkbox" value="Plasma TV"> Plasma TV</label>
+<label><input type="checkbox" value="Standing Fan"> Standing Fan</label>
+
+<label><input type="checkbox" value="Solar Fan"> Solar Fan</label>
+<label><input type="checkbox" value="Yam Pounder"> Yam Pounder</label>
+
+</div>
+
+<textarea id="specs" placeholder="Specifications"></textarea>
+
+<button type="submit">Submit Order</button>
+
+</form>
+
+</div>
+
+<script>
+
+function sendWhatsApp(){
+
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var location=document.getElementById("location").value;
+var specs=document.getElementById("specs").value;
+
+var selected=[];
+document.querySelectorAll('.products input:checked').forEach(el=>selected.push(el.value));
+
+var msg="Hello INNOSON ELECTRONICS PLAZA%0A"
++"Name: "+name+"%0A"
++"Phone: "+phone+"%0A"
++"Location: "+location+"%0A"
++"Products: "+selected.join(", ")+"%0A"
++"Specifications: "+specs;
+
+window.open("https://wa.me/2348038164370?text="+msg);
+
+}
+
+</script>
+
+</body>
+</html>
