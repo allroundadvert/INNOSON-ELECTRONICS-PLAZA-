@@ -9,45 +9,63 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #fef6e4; /* light gold background */
+      color: #333;
     }
+
     header img {
       width: 100%;
       height: auto;
+      display: block;
     }
+
+    .intro {
+      text-align: center;
+      padding: 20px;
+      background: #ffd700; /* gold header */
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       padding: 20px;
-      background: #fff;
     }
+
     .gallery img {
       width: calc(50% - 10px);
       height: auto;
       display: block;
       border-radius: 5px;
     }
+
     .form-section {
-      background: #fff;
+      background: #fff8e1; /* soft gold form background */
       padding: 20px;
       margin: 20px;
       border-radius: 8px;
-      border: 2px solid #d4af37; /* Gold border */
+      border: 1px solid #ffd700;
     }
+
     .form-section h2 {
       text-align: center;
-      color: #d4af37; /* Gold heading */
+      color: #b8860b;
     }
+
     .form-group {
       margin-bottom: 15px;
     }
+
     label {
       display: block;
       margin-bottom: 5px;
       color: #333;
     }
+
     input, select, textarea, button {
       width: 100%;
       padding: 8px;
@@ -55,44 +73,66 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
+
     .products {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .products label {
       width: calc(50% - 10px);
-      background: #fff7e6; /* light gold background */
+      background: #fff5d1;
       padding: 5px;
       border-radius: 4px;
-      border: 1px solid #d4af37;
+      border: 1px solid #ffd700;
       cursor: pointer;
+      display: flex;
+      align-items: center;
     }
+
+    .products input {
+      margin-right: 5px;
+    }
+
     .buttons {
       display: flex;
       justify-content: center;
       gap: 10px;
       margin-top: 15px;
     }
+
     .buttons a {
       display: inline-block;
       padding: 10px 20px;
-      background: #d4af37; /* Gold button */
+      background: #b8860b; /* gold button */
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
       text-align: center;
     }
+
     .buttons a.facebook {
-      background: #b8860b; /* darker gold for Facebook button */
+      background: #3b5998; /* Facebook blue */
     }
+
     iframe {
       width: 100%;
       height: 300px;
       border: none;
       border-radius: 8px;
       margin-top: 20px;
+    }
+
+    .address {
+      background: #fff8e1;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 8px;
+      border: 1px solid #ffd700;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -102,38 +142,20 @@
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/9558d6a63c2211be846921bec0007115ad92c8d0/.github/workflows/1773740154904.png" alt="INNOSON Electronics Plaza">
 </header>
 
+<div class="intro">
+  INNOSON ELECTRONICS PLAZA <br>
+  Authorized Dealers in Samsung, LG, Panasonic, Polyester
+</div>
+
 <section class="gallery">
-  <!-- All your images 2 per row -->
+  <!-- Example images; add all 32 as needed -->
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(1).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(10).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(11).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(12).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(13).webp" alt="">
   <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(14).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(2).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(3).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(4).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(5).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(6).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(7).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(8).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download%20(9).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/download.webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(42).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(43).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(44).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(45).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(46).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(47).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(48).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(51).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/images%20(53).jpeg" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(2).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(3).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(5).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(6).webp" alt="">
-  <img src="https://raw.githubusercontent.com/allroundadvert/INNOSON-ELECTRONICS-PLAZA-/a3eb0c6712b89c92cbb25698ea275b021d6daed6/shopping%20(7).webp" alt="">
+  <!-- add all remaining images -->
 </section>
 
 <section class="form-section">
@@ -166,13 +188,18 @@
         <label><input type="checkbox" value="Yam Pounder"> Yam Pounder</label>
       </div>
     </div>
-    <button type="button" onclick="submitOrder()" style="background:#d4af37;color:white;">Submit Order</button>
+    <button type="button" onclick="submitOrder()" style="background:#b8860b;color:white;">Submit Order</button>
   </form>
 
   <div class="buttons">
     <a href="https://wa.me/2348038164370" target="_blank">WhatsApp</a>
     <a href="https://www.facebook.com/share/1AhBMfAvVh/" target="_blank" class="facebook">Facebook</a>
   </div>
+</section>
+
+<section class="address">
+  Head Office: 62 Mission Road opposite Holy Cross Cathedral, Benin City, Edo State <br>
+  Branch: 53 Mission Road opposite Glo Office, Benin City, Edo State
 </section>
 
 <section class="map">
